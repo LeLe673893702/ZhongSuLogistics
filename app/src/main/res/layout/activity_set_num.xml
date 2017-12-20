@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置编号"
+        android:id="@+id/set_num_layout_title"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:gravity="center"/>
+
+    <!--分割线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/set_num_layout_title"
+        android:id="@+id/set_num_layout_line"
+        android:orientation="vertical"
+        android:background="@color/line">
+    </LinearLayout>
+
+    <!--设置编号信息-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_num_layout_line"
+        android:orientation="vertical">
+
+        <!--周转箱ID-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="周转箱ID:"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/dark_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="未扫描"
+                android:id="@+id/set_num_binning_id_text"
+                android:textSize="18dp"
+                android:textColor="@color/dark_gray"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!--分割线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line">
+        </LinearLayout>
+
+        <!--种类ID-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="货物种类ID:"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/dark_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="未扫描"
+                android:id="@+id/set_num_kind_id_text"
+                android:textSize="18dp"
+                android:textColor="@color/dark_gray"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!--分割线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line">
+        </LinearLayout>
+
+        <!--绑定库区ID-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="绑定库区ID:"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/dark_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="未扫描"
+                android:id="@+id/set_num_warehouse_id_text"
+                android:textSize="18dp"
+                android:textColor="@color/dark_gray"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!--分割线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line">
+        </LinearLayout>
+
+        <!--设置临时ID-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="设置临时ID:"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/dark_gray"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="请输入周转箱临时ID"
+                android:textColorHint="@color/dark_gray"
+                android:id="@+id/set_num_temporary_id_edit"
+                android:textSize="18dp"
+                android:textColor="@color/dark_gray"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!--分割线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line">
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/set_num_scan_button"
+            android:text="扫周转箱"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/set_num_sure_button"
+            android:text="确定设置"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/set_num_cancel_button"
+            android:text="取消设置"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/set_num_complete_button"
+            android:text="完成设置"/>
+    </LinearLayout>
+</RelativeLayout>

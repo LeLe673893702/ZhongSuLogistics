@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--标题栏-->
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="卸货"
+        android:textColor="@color/black"
+        android:id="@+id/unloading_layout_title"
+        android:gravity="center"
+        android:textSize="40sp"/>
+
+    <!--分割线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/unloading_layout_title"
+        android:id="@+id/unloading_layout_line"
+        android:orientation="vertical"
+        android:background="@color/line">
+    </LinearLayout>
+
+    <!--货箱-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/unloading_layout_line"
+        android:orientation="vertical">
+
+        <!--分割线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line">
+        </LinearLayout>
+
+        <!--货箱id-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="130dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="货箱编号:"
+                android:textSize="20sp"
+                android:textColor="@color/dark_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:id="@+id/unloading_container_id"
+                android:textColor="@color/dark_gray"
+                android:text="未扫描"/>
+
+        </LinearLayout>
+
+        <!--分割线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line">
+        </LinearLayout>
+
+        <!--货物总数量-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="130dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="货箱数量:"
+                android:textSize="20sp"
+                android:textColor="@color/dark_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/unloading_container_total_text"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/dark_gray"
+                android:text="未扫描"/>
+
+        </LinearLayout>
+
+        <!--分割线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line">
+        </LinearLayout>
+
+
+        <!--分割线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line">
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <!--货箱详情按钮-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="货箱详情"
+            android:id="@+id/unloading_container_details_button"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:textSize="25sp"/>
+
+        <!--扫描货箱按钮-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="扫描货箱"
+            android:id="@+id/unloading_scan_container_button"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"/>
+
+        <!--完成卸货按钮-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="完成卸货"
+            android:layout_margin="5dp"
+            android:id="@+id/unloading_complete_button"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"/>
+
+
+
+</LinearLayout>
+
+</RelativeLayout>

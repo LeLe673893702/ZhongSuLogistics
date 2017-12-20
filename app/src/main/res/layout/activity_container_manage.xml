@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="周转箱管理"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:id="@+id/container_manage_title"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"/>
+
+    <!--分割线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/container_manage_title"
+        android:id="@+id/container_manage_line"
+        android:orientation="vertical"
+        android:background="@color/line">
+    </LinearLayout>
+
+   <!--周转箱信息-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container_manage_line"
+        android:orientation="vertical">
+        <!--周转箱ID-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/dark_gray"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="周转箱ID:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:text="未扫描"
+                android:id="@+id/container_manage_id_text"
+                android:gravity="center"
+                android:textColor="@color/dark_gray"/>
+        </LinearLayout>
+
+
+        <!--分割线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line">
+        </LinearLayout>
+
+        <!--绑定库区ID-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/dark_gray"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="绑定库区ID:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:text="未扫描"
+                android:id="@+id/container_manage_pos_id_text"
+                android:gravity="center"
+                android:textColor="@color/dark_gray"/>
+        </LinearLayout>
+
+        <!--分割线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line">
+        </LinearLayout>
+
+        <!--货物种类ID-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/dark_gray"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="货物种类ID:"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:background="@null"
+                android:inputType="number"
+                android:digits="13"
+                android:hint="请输入货物种类ID"
+                android:textColorHint="@color/dark_gray"
+                android:id="@+id/container_manage_kind_id_edit"
+                android:gravity="center"
+                android:textColor="@color/dark_gray"/>
+        </LinearLayout>
+
+        <!--分割线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line">
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--按钮-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout">
+
+        <!--扫描仓位按钮-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/container_manage_scan_pos_button"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="扫描仓位"/>
+
+        <!--扫描周转箱按钮-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/container_manage_scan_box_button"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="扫描周转箱"
+            android:layout_above="@+id/linearLayout"
+            android:layout_alignParentStart="true"/>
+
+        <!--绑定周转箱按钮-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/container_manage_binding_button"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="绑定周转箱"/>
+
+        <!--解绑周转箱按钮-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/container_manage_unbinding_button"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="解绑周转箱"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+ 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--标题栏-->
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="出库"
+        android:textColor="@color/black"
+        android:id="@+id/out_stock_layout_title"
+        android:gravity="center"
+        android:textSize="40sp"/>
+
+    <!--分割线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/out_stock_layout_title"
+        android:id="@+id/out_stock_layout_line"
+        android:orientation="vertical"
+        android:background="@color/line">
+    </LinearLayout>
+
+    <!--出库-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/out_stock_layout_line">
+
+
+        <!--货物编号-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="货物编号:"
+                android:textColor="@color/dark_gray"
+                android:textSize="20sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/dark_gray"
+                android:id="@+id/out_stock_goods_id_text"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="未扫描"/>
+        </LinearLayout>
+
+        <!--分割线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line">
+        </LinearLayout>
+
+        <!--出库数量-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="出库数量:"
+                android:textColor="@color/dark_gray"
+                android:textSize="20sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/dark_gray"
+                android:id="@+id/out_stock_compete_num_text"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="未扫描"/>
+        </LinearLayout>
+
+        <!--分割线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line">
+        </LinearLayout>
+
+        <!--出库时间-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="出库时间:"
+                android:textColor="@color/dark_gray"
+                android:textSize="20sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/dark_gray"
+                android:id="@+id/out_stock_compete_time_text"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="未扫描"/>
+        </LinearLayout>
+
+        <!--分割线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line">
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--按钮-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <!--扫描货物按钮-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="扫描货物"
+            android:textSize="20sp"
+            android:id="@+id/out_stock_scan_goods_button"
+            android:textColor="@color/black"/>
+
+
+        <!--完成出库按钮-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/out_stock_compete_button"
+            android:text="完成出库"/>
+    </LinearLayout>
+</RelativeLayout>

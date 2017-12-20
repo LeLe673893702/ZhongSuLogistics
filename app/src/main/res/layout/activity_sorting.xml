@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="分拣"
+        android:id="@+id/sorting_layout_title"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:gravity="center"/>
+
+    <!--分割线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/sorting_layout_title"
+        android:id="@+id/sorting_layout_line"
+        android:orientation="vertical"
+        android:background="@color/line">
+    </LinearLayout>
+
+    <!--分拣信息-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sorting_layout_line"
+        android:orientation="vertical">
+
+        <!--货物种类id-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="装箱编号:"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/dark_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="未扫描"
+                android:id="@+id/sorting_binning_id_text"
+                android:textSize="18dp"
+                android:textColor="@color/dark_gray"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+
+        <!--分割线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line">
+        </LinearLayout>
+
+        <!--总数量-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="总数量:"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/dark_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="未扫描"
+                android:textSize="18dp"
+                android:id="@+id/sorting_goods_total_text"
+                android:textColor="@color/dark_gray"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!--分割线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line">
+        </LinearLayout>
+
+        <!--已完成数量-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="已完成数量:"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/dark_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="未扫描"
+                android:id="@+id/sorting_goods_num_text"
+                android:textSize="18dp"
+                android:textColor="@color/dark_gray"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!--分割线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line">
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--操作按钮-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/sorting_set_code_button"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="设置编码"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/sorting_scan_goods_button"
+            android:text="扫描货物"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:id="@+id/sorting_scan_container_button"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="扫描货箱"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/sorting_compete_button"
+            android:text="完成分拣"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
